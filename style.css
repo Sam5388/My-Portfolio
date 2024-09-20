@@ -375,9 +375,7 @@ height: 100%;
     #contactus h1{
         font-size: 30px;
     }
-    #contactus p{
-        font-size:13px ;
-    }
+    
     nav img{
         height: 60px;
     }
@@ -401,7 +399,7 @@ height: 100%;
         padding-top: 10px;
     }
     #contactus h1{
-        font-size: 60px;
+        font-size: 30px;
     }
     .contactus-details{
         display: flex;
@@ -412,9 +410,11 @@ height: 100%;
     .contactus-line{
         display: none;
     }
-    
+    .contactus-details li a{
+        font-size: 15px;
+    }
     .social-icons-bottom ul li i{
-        font-size: 40px;
+        font-size: 35px;
         padding: 2px;
         background-color: rgba(255, 0, 0, 0.658);
         height: 60px;
@@ -429,7 +429,7 @@ height: 100%;
 }
 
 
-@media only screen and (max-width:800px){
+@media only screen and (min-width:500px)and (max-width:800px){
     nav{
         height: 50px;
         padding: 0px 5%;
@@ -443,6 +443,22 @@ height: 100%;
     }
     nav ul li{
         margin:0px  7px;
+    }
+    .project-details h1{
+        font-size:20px ;
+    }
+    .project-details p{
+        font-size: 13px;
+    }
+    .project-details a {
+        height: 40PX;
+        width: 40PX;
+    }
+    .layer h1{
+        font-size: 25px;
+    }
+    .layer p{
+        font-size: 13px;
     }
 }
 
