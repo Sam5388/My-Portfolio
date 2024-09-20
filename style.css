@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black !important ;
+    font-family: "roboto" !important;
+    color: white !important;  
+}
+.ggg{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background: rgb(255, 0, 0);
+    display: inline;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+    display: none;
+    font-size: 20px;
+    padding: 20px;
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/image.png");
+    color: white;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+nav{
+   display: flex;
+   justify-content: center;
+    height: 80px;
+    padding: 0px 10%;
+}
+nav img{
+    height:70px;
+    line-height: 80px;
+    box-shadow: 5px 5px red;
+    border: 1px solid red;
+    margin-top: 10px;
+}
+nav ul{
+    float: right;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 20px;
+
+    
+}
+nav ul li a{
+    font-size: 18px;
+    position: relative;
+    list-style: none;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.closebutton{
+    position:absolute;
+    top: 20px;
+    right: 70px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    background-color: aqua;
+    position: absolute;
+    transition: 0.5s;
+    z-index: 2;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+.header-div{
+    font-size: 20px;
+    padding:200px 15%;
+
+}
+
+.header-div span{
+    color: red;
+    font-weight: bold;
+}
+.social-icons ul{
+    display: flex;
+
+}
+.social-icons ul li i{
+    font-size: 40px;
+    padding: 2px;
+    background-color: rgba(255, 0, 0, 0.658);
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.579);
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+/* -----------------about-------------- */
+#about-us{
+    background: black;
+    color: white;
+    padding:5% ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+#about-us img{
+    border-radius: 50%;
+    max-height: 80vh;
+    max-width: 90%;
+    box-shadow: 0 0  20px  rgba(255, 255, 255, 0.712);
+}
+.about-sec-2{
+    max-height: 100%;
+    width: 100%;
+    padding-bottom: 5%;
+}
+.heading{
+    font-size: 55px;
+    font-weight:bold;
+}
+.about-sec-2 p{
+    font-size: 15px;
+
+}
+.about-sec-2 ul{
+    display: flex;
+    font-size: 20px;
+
+}
+
+.title-links{
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.title-links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.title-links.active-link::after{
+    width: 50%;
+}
+.title-contents div p{
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    line-height: 1px;
+}
+.title-contents{
+    display: none;
+    padding-top: 15px;
+}
+
+.title-contents div ul{
+    display: block;
+}
+.title-contents div li{
+    font-size: 15px;
+}
+.title-contents.active-tab{
+    display: block;
+}
+#my-works{
+    background-color: black;
+}
+
+.mywork{
+    background: rgb(165, 165, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#Projects{
+    padding: 0px 5%;
+}
+.serives-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+}
+.services-list-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.services-list-container{
+    position: relative;
+    overflow: hidden;
+}
+.project-details{
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.437),red);
+    height: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s;
+}
+.services-list-container:hover .project-details{
+height: 100%;
+}
+.project-details a{
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+
+
+#hobbies{
+    padding: 5%;
+}
+.hobbies-sec{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows:repeat(auto-fit,minmax(250px,1fr)) ;
+    grid-gap: 20px;
+    
+}
+.div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+.div{
+    position: relative;
+}
+.layer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.373),rgb(213, 23, 23));
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    height:0;
+    width: 100%;
+    transition: height 0.5s;
+    
+   
+}
+.div:hover div{
+    height: 100%;
+    
+}
+#contactus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    cursor: pointer;
+}
+#contactus ul{
+    display: flex;
+
+}
+#contactus ul li{
+    margin-left: 10px;
+    font-size:18px ;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+#contactus ul li a{
+    text-decoration: none;
+    color: white;
+}
+.social-icons-bottom ul li i{
+    font-size: 40px;
+    padding: 2px;
+    background-color: rgba(255, 0, 0, 0.658);
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.579);
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url("./images/Untitled\ Project.jpg");
+    }
+    .ggg{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        margin-top: 10px;
+        
+    }
+    .header-div h1{
+        width: 30%;
+    }
+    
+    nav ul{
+        background: rgb(255, 0, 0);
+        top: 0;
+        right: -250px;
+        position: fixed;
+        overflow: hidden;
+        height: 100vh;
+        width: 250px;
+        padding-top:100px ;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    .header-div{
+        font-size: 20px;
+        padding-top: 30%;
+        padding-left: 5%;
+    
+    }
+    #about-us{
+        background-color: rgb(21, 20, 20);
+        margin: 20px;
+        border-radius: 20px;
+    }
+    #contactus h1{
+        font-size: 30px;
+    }
+    #contactus p{
+        font-size:13px ;
+    }
+    nav img{
+        height: 60px;
+    }
+    .social-icons ul{
+        display: flex;
+        flex-direction:column;
+        display: inline-block;
+        margin: 0px 5%;
+    }
+    .social-icons ul li i{
+        font-size: 40px;
+        padding: 2px;
+        background-color: rgba(255, 0, 0, 0.658);
+        height: 60px;
+        width: 60px;
+        margin-bottom: 10px;
+        position: relative;
+        color: rgba(255, 255, 255, 0.579);
+        text-align: center;
+        border-radius: 50%;
+        padding-top: 10px;
+    }
+    #contactus h1{
+        font-size: 60px;
+    }
+    .contactus-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactus-line{
+        display: none;
+    }
+    
+    .social-icons-bottom ul li i{
+        font-size: 40px;
+        padding: 2px;
+        background-color: rgba(255, 0, 0, 0.658);
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+        color: rgba(255, 255, 255, 0.579);
+        text-align: center;
+        border-radius: 50%;
+        padding-top: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-width:800px){
+    nav{
+        height: 50px;
+        padding: 0px 5%;
+    }
+    .header-div{
+        padding-top:20% ;
+        padding-left:5% ;
+    }
+    nav img{
+        height: 50px;
+    }
+    nav ul li{
+        margin:0px  7px;
+    }
+}
+

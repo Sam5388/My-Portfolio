@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <img src="./images/download-removebg-preview.png"   alt="">
+        <p class="ggg" onclick="opentab()"><i class="fa-solid fa-bars"></i>
+
+        </p>
+        <ul id="sidemenu">
+          <li><a href="#header" onclick="closetab()">home</a></li>
+          <li><a href="#about-us" onclick="closetab()">about-us</a></li>
+          <li><a href="#Projects" onclick="closetab()">Projects</a></li>
+          <li><a href="#hobbies" onclick="closetab()">hobbies</a></li>
+          <li><a href="#contactus" onclick="closetab()">contact-us</a></li>
+          <p class="ggg closebutton" onclick="closetab()">X</p>
+        </ul>
+      </nav >
+      <div class="header-div">
+        <p>Aspiring <br>Frontend Developer</p>
+        <h1>I am <span><br>Samuel  Chokka</span></h1>
+        <div class="social-icons">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/samuelchokka/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Sam5388/"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/samuel.chokka/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+   <div id="about-us" data-aos="fade-up" data-aos-duration="1000">
+        <div class="about-sec-1">
+          <img src="./images/ABOUT.jpg" alt="">
+        </div>
+        <div class="about-sec-2">
+          <h1 class="heading">About Us</h1>
+          <p>Hi, I’m Samuel Chokka, a passionate front-end developer with a Bachelor’s degree in Computer Science. I specialize in crafting clean, responsive, and user-friendly websites using technologies like HTML, CSS, JavaScript, Bootstrap, and version control with Git/GitHub. Recently, I developed my personal portfolio using these skills, which showcases my dedication to web design and development.
+
+           </p>
+          
+            <ul>
+              <li  class="title-links active-link" onclick="opentabb('skills')">Skills</li>
+              <li  class="title-links"  onclick="opentabb('Projects')">Projects</li>
+              <li  class="title-links" onclick="opentabb('education')">Education</li>
+            </ul>
+            <div id="skills" class=" title-contents active-tab ">
+              <div>
+                <p>HTML </p>
+                <ul>
+                  <li>Skilled in semantic HTML for well-structured, accessible, and SEO-friendly websites.</li>
+                  <li>Focus on cross-browser compatibility and clean, scalable code</li>
+                </ul>
+              </div>
+              <div>
+                <p>CSS </p>
+                <ul>
+                  <li>Proficient in responsive design using Flexbox, CSS Grid, and media queries.</li>
+                  <li>Experience with CSS animations and transitions to enhance user interaction.</li>
+                </ul>
+              </div>
+              <div>
+                <p>JavaScript </p>
+                <ul>
+                  <li>Expertise in DOM manipulation, adding interactivity with modern ES6+ syntax</li>
+            
+                </ul>
+              </div>
+              <div>
+                <p>Bootstrap</p>
+                <ul>
+                  <li>Maintain project version control with Git, and showcase work on GitHub for easy collaboration.</li>
+            
+                </ul>
+              </div>
+              <div>
+                <p>Git & GitHub</p>
+                <ul>
+                  <li>Efficient in building responsive websites with Bootstrap, customizing components for unique designs.</li>
+            
+                </ul>
+              </div>
+              
+              
+            </div>
+            <div id="Projects" class="title-contents " >
+              <div>
+                <p>MyPortfolio</p>
+                <ul>
+                  <li>The portfolio section is a clean, well-structured area where I showcase my skills, projects, and education as a front-end developer. It includes detailed descriptions of my expertise in HTML, CSS, JavaScript, and Bootstrap, along with links to my live projects. This section effectively highlights my proficiency in web design, focusing on creating user-friendly, responsive designs.</li>
+                </ul>
+              </div>
+              <div>
+                <p>ToDoList</p>
+                <ul>
+                  <li>The Todo App allows users to create, manage, and store tasks in a simple and intuitive interface. Built with HTML, CSS, and JavaScript, it features:</li>
+                  <li>Task Creation: Users can enter tasks in an input field and add them to their task list.</li>
+                  <li>Task Management: Each task can be checked off as completed or deleted, providing a clear overview of pending and completed tasks.</li>
+                  <li>Persistent Storage: Tasks are saved in the browser's local storage, allowing users to revisit their tasks even after refreshing the page.</li>
+                  <li>Responsive Design: The app uses Bootstrap for styling, ensuring it looks good on various devices.</li>
+
+                </ul>
+              </div>
+              
+
+            </div>
+            <div id="education" class="title-contents ">
+              <div>
+                <p>Graduation (2018-2021)</p>
+                <ul>
+                  <li>I am Completed Bsc Computer science with an aggregation of 7.3 CGPA in P R Govt College,Kakinada</li>
+                  <li>During My studies ,I developed strong technicals skills in c,c++,java.</li>
+                  <li>i will participated in several cultural activities , that are a play a crucial role to develop my communication skills.</li>
+                  
+                </ul>
+              </div>
+              <div>
+                <p>Intermediate Education(2016-2018)</p>
+                <ul>
+                  <li>I am Completed my Intermediate education in M.P.C with an aggregation 0f 94% in NRI jr college,Visakhapatnam.</li>
+                  
+                  
+                </ul>
+              </div>
+            </div>
+              
+        </div>
+   </div>
+   <div id="Projects" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="heading">My Projects</h1>
+    <div class="serives-section">
+      <div class="services-list-container" >
+        <img src="./images/my portfolio.png" alt="">
+        <div class="project-details">
+          <h1>MyPortfolio</h1>
+          <p>Creted this project to showcase my skills <br> and experience by using technoligies <br>like html,css,javascript,bootstrap,AOS.</p>
+          <a href=""><i class="fa-solid fa-share"></i></a>
+        </div>
+
+      </div>
+      <div class="services-list-container" >
+        <img src="./images/ToDoList.png" alt="">
+        <div class="project-details">
+          <h1>ToDoList</h1>
+          <p>Creted a simple todolist   using  <br>html,css ,javascript,bootstrap.</p>
+          <a href="https://github.com/Sam5388/todolist/"><i class="fa-solid fa-share"></i></a>
+        </div>
+      </div>
+      <div class="services-list-container" >
+        <img src="./images/wiki (2).png" alt="">
+        <div class="project-details">
+          <h1>Wikipedia search</h1>
+          <p>pull wikipedia info from ccbp server <br>using fetch operation to show the <br> wikipedia results using javascript.</p>
+          <a href="https://github.com/Sam5388/wikepedia-search/"><i class="fa-solid fa-share"></i></a>
+        </div>
+      </div>
+      
+    </div>
+   </div>
+   <div id="hobbies" data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="heading">hobbies</h1>
+    <div class="hobbies-sec">
+      <div class="div">
+        <img src="./images/690otqfp.bmp" alt="">
+        <div class="layer">
+          <h1>Designing</h1>
+          <p>learning new desiging skills in front <br> end was one of my favourite hobbies.Designing <br> new  websites was an interesting thing to me</p>
+         
+        </div>
+      </div>
+      <div class="div">
+        <img src="./images/1714611900094~2.jpg" alt="">
+        <div class="layer">
+          <h1>Swimming</h1>
+          <p>Swimming is a refreshing and energizing <br>hobby for me, offering both physical <br> fitness and mental relaxation as I enjoy <br>gliding through the water.</p>
+        </div>
+        
+      </div>
+      <div class="div">
+        <img src="./images/learning react.jpeg" alt="">
+        <div class="layer">
+          <h1>Learning New <br> Frameworks</h1>
+          <p>Exploring and experimenting with the <br>latest front-end frameworks like <br> React, Vue.js, or Svelte.</p>
+          
+        </div>
+      </div>
+    </div>
+   </div>
+   <div id="contactus">
+    <h1 class="pb-2">contact us</h1>
+    <ul class="contactus-details">
+      <li><a href="">Samuel Chokka   </a></li>
+      <li class="contactus-line">|</li>
+      <li><a href="mailto:samuelchokka59@gmail.com">  samuelchokka59@gmail.com </a></li>
+      <li class="contactus-line">|</li>
+      <li><a href="phoneto:7075710170">+91 7075710170</a></li>
+    </ul>
+    <div class="social-icons-bottom">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/samuelchokka/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/Sam5388/"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/samuel.chokka/"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+    
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      var sidetab = document.getElementById("sidemenu");
+      function opentab() {
+        sidetab.style.right = "0px";
+      }
+      function closetab() {
+        sidetab.style.right = "-250px";
+      }
+    
+
+      var titleLinks=document.getElementsByClassName("title-links")
+      var titlecontents=document.getElementsByClassName("title-contents")
+      function opentabb(tabname){
+        for(let titlelink of titleLinks){
+          titlelink.classList.remove("active-link")
+        }
+        for (let titlecontent of titlecontents){
+          titlecontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fb5d43e7bd.js" crossorigin="anonymous"></script>
+  </body>
+</html>
